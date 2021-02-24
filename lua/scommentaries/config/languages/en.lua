@@ -1,0 +1,55 @@
+local lang = {}
+lang['category_cats'] = 'Categories'
+lang['category_create'] = 'Add a comment'
+lang['category_control'] = 'My comments'
+lang['category_logs'] = 'Comment logs'
+
+lang['text_self'] = 'TEXT'
+lang['text_type'] = 'TYPE'
+lang['text_unknown'] = 'unknown'
+lang['text_removing'] = 'Will be removed in %s'
+lang['text_submit'] = 'Confirm'
+lang['text_creator'] = 'Creator'
+lang['text_anon'] = 'Anonymous'
+lang['text_datecreation'] = 'Creation date'
+lang['text_timetoremove'] = 'Time left'
+lang['text_comm'] = 'Text'
+lang['text_remove'] = 'Remove comment'
+lang['text_cancel'] = 'Cancel'
+lang['text_moveto'] = 'Teleport to comment'
+lang['text_copysid'] = 'Copy SteamID'
+lang['text_days'] = 'days'
+lang['text_hours'] = 'hours'
+lang['text_minutes'] = 'minutes'
+lang['text_infinite'] = 'infinite'
+lang['text_yes'] = 'Yes'
+lang['text_no'] = 'No'
+lang['text_duration'] = 'DURATION'
+lang['text_permanent'] = 'Set permanent'
+lang['text_buttonlike'] = 'Press [%s] to like this comment'
+lang['text_likes'] = 'Likes'
+
+lang['check_anon'] = 'Stay anonymous'
+lang['check_perm'] = 'Permanent comment'
+
+lang['notify_changedtype'] = 'You successfully changed comment type!'
+lang['notify_fieldempty'] = "You can't leave text field empty!"
+lang['notify_niltype'] = "You didn't specify a comment type"
+lang['notify_copysid'] = "You successfully copied author's SteamID"
+lang['notify_serverlimit'] = 'Server limit of commentaries has been reached!'
+lang['notify_accountlimit'] = 'You reached the limit of maximum commentaries on your account!'
+lang['notify_nearcomm'] = 'There is a comment nearby!'
+lang['notify_ground'] = 'You can leave comments only on ground!'
+lang['notify_moveto'] = 'You teleported to the comment #%s'
+lang['notify_remove'] = 'You have removed comment #%s'
+lang['notify_undefined'] = "Comment #%s doesn't exist anymore!"
+lang['notify_cantafford'] = "You can't afford to create a comment"
+lang['notify_commcreation'] = 'You successfully created a comment!'
+lang['notify_fieldsmall'] = 'Your text is too short!'
+lang['notify_fieldlarge'] = 'Your text is too large!'
+lang['notify_permanent'] = 'You successfully changed duration of comment #%s to permanent!'
+lang['notify_errorlike'] = 'You have already liked this comment!'
+lang['notify_likecomm'] = 'You liked this comment!'
+lang['notify_likelimit'] = 'This comment has reached like limit!'
+
+comms.language = lang
