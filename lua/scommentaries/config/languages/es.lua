@@ -1,0 +1,55 @@
+local lang = {}
+lang['category_cats'] = 'Categorías'
+lang['category_create'] = 'Añadir un comentario'
+lang['category_control'] = 'Mis comentarios'
+lang['category_logs'] = 'Historial de comentarios'
+
+lang['text_self'] = 'TEXTO'
+lang['text_type'] = 'TIPO'
+lang['text_unknown'] = 'desconocido'
+lang['text_removing'] = 'Va a ser eliminado en %s'
+lang['text_submit'] = 'Confirmar'
+lang['text_creator'] = 'Creador'
+lang['text_anon'] = 'Anónimo'
+lang['text_datecreation'] = 'Fecha de creación'
+lang['text_timetoremove'] = 'Tiempo faltante'
+lang['text_comm'] = 'Texto'
+lang['text_remove'] = 'Eliminar comentario'
+lang['text_cancel'] = 'Cancelar'
+lang['text_moveto'] = 'Teletransportar a la dirección del comentario'
+lang['text_copysid'] = 'Copiar SteamID'
+lang['text_days'] = 'días'
+lang['text_hours'] = 'horas'
+lang['text_minutes'] = 'minutos'
+lang['text_infinite'] = 'infinito'
+lang['text_yes'] = 'Sí'
+lang['text_no'] = 'No'
+lang['text_duration'] = 'DURACIÓN'
+lang['text_permanent'] = 'Volver permanente'
+lang['text_buttonlike'] = 'Presiona [%s] para darle like a este comentario'
+lang['text_likes'] = 'Likes'
+
+lang['check_anon'] = 'Mantenerse anónimo'
+lang['check_perm'] = 'Comentario permanente'
+
+lang['notify_changedtype'] = '¡Has cambiado el tipo de comentario con éxito!'
+lang['notify_fieldempty'] = "¡No puedes dejar el cuadro de texto vacío!"
+lang['notify_niltype'] = "No has specificado el tipo de comentario"
+lang['notify_copysid'] = "SteamID del autor copiado"
+lang['notify_serverlimit'] = '¡Has alcanzado el límite de comentarios del servidor!'
+lang['notify_accountlimit'] = '¡Has alcanzado el límite de comentarios de tu cuenta!'
+lang['notify_nearcomm'] = '¡Hay un comentario cerca!'
+lang['notify_ground'] = '¡Solo puedes dejar comentarios en el suelo!'
+lang['notify_moveto'] = 'Te has teletransportado al comentario #%s'
+lang['notify_remove'] = 'Has eliminado el comentario #%s'
+lang['notify_undefined'] = "¡Comentario #%s ya no existe!"
+lang['notify_cantafford'] = "No se ha podido dejar un comentario"
+lang['notify_commcreation'] ='¡Has creado un comentario con éxito!'
+lang['notify_fieldsmall'] = '¡Tu comentario es muy corto!'
+lang['notify_fieldlarge'] = '¡Tu comentario es muy largo!'
+lang['notify_permanent'] = '¡Has cambiado la duración del comentario #%s a permanente!'
+lang['notify_errorlike'] = '¡Ya le has dado like a este comentario antes!'
+lang['notify_likecomm'] = '¡Le diste like a este comentario!'
+lang['notify_likelimit'] = '¡Este comentario ya ha alcanzado el límite de likes!'
+
+comms.language = lang
