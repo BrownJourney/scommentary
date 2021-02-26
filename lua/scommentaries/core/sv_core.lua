@@ -107,7 +107,7 @@ function comms.FindNearby(pos)
 
 	end
 
-	if bestDistance and bestDistance < 500 then
+	if bestDistance and bestDistance < (comms.config.distanceBetweenComments or 500) then
 
 		return true, commID
 

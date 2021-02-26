@@ -26,6 +26,8 @@ comms.config.likeButton = KEY_N -- defines a button to like comments
 
 comms.config.likeHUDOffset = 0 -- y-offset of like text hud
 
+comms.config.distanceBetweenComments = 500 -- minimal distance between comments
+
 comms.config.lang = 'en' -- language code to translate all text to your language (you must create the language file first) ***REQUIRES RESTART***
 
 --[[-------------------------------------------------------------------------
