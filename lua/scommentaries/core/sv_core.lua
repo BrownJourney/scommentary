@@ -83,7 +83,7 @@ function comms.CanLeave(ply)
 
 	local count = comms.CountPlayer(ply)
 
-	return count < 20
+	return count < (comms.config.playerCommentsLimit or 4)
 
 end
 
@@ -495,16 +495,6 @@ hook.Add('PlayerInitialSpawn', 'comms_UpdateForPlayer', function(ply)
 
 end)
 
-hook.Add('PlayerButtonDown', 'comms_LikeComment', function(ply, key)
-
-	if !IsValid(ply) then return end
-
-	if key != comms.config.likeButton then return end
-
-	comms.LikeComment(ply)
-
-end)
-
 --[[-------------------------------------------------------------------------
 NET
 ---------------------------------------------------------------------------]]
@@ -531,5 +521,13 @@ net.Receive('comms_action', function(len, ply)
 	local data = net.ReadUInt(3)
 
 	comms.Action(ply, id, data)
+
+end)
+
+util.AddNetworkString('comms_performlike')
+
+net.Receive('comms_performlike', function(len, ply)
+
+	comms.LikeComment(ply)
 
 end)

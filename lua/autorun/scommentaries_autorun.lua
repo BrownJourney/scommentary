@@ -14,6 +14,8 @@ if (SERVER) then
 	include('scommentaries/core/sv_core.lua')
 	AddCSLuaFile('scommentaries/core/cl_core.lua')
 
+	AddCSLuaFile('scommentaries/core/cl_options.lua')
+
 	resource.AddWorkshop('2401989259')
 
 end
@@ -27,5 +29,7 @@ if (CLIENT) then
 	include("scommentaries/config/languages/".. comms.config.lang .. '.lua')
 
 	include('scommentaries/core/cl_core.lua')
+
+	include('scommentaries/core/cl_options.lua')
 
 end

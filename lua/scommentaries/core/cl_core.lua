@@ -155,6 +155,13 @@ end
 
 function comms.Draw()
 
+
+	if !GetConVar('cl_scomms_hud_show'):GetBool() then
+
+		return
+
+	end
+
 	LocalPlayer().CanLike = false
 
 	for i = 1, #comms.data do
@@ -328,7 +335,15 @@ function comms.LikeHUD()
 
 	end
 
-	draw.SimpleText(comms.lang('text_buttonlike'):format(input.GetKeyName(comms.config.likeButton):upper()), 'Bj_Commentary_Small', w / 2, h * 0.8 + comms.config.likeHUDOffset, Color(0, 204, 204, comms.DrawAlpha), TEXT_ALIGN_CENTER)
+	draw.SimpleText(comms.lang('text_buttonlike'):format(input.GetKeyName(GetConVar('cl_scomms_bind_like'):GetInt()):upper()), 'Bj_Commentary_Small', w / 2, h * 0.8 + comms.config.likeHUDOffset, Color(0, 204, 204, comms.DrawAlpha), TEXT_ALIGN_CENTER)
+
+end
+
+function comms.addLike()
+
+	net.Start('comms_performlike')
+
+	net.SendToServer()
 
 end
 
@@ -340,13 +355,15 @@ function comms.KeyPress(pl, key)
 
 	end
 
-	if key != comms.config.toggleButton then
+	if key == GetConVar('cl_scomms_bind_menu'):GetInt() then
 
-		return
+		comms.menuPopup()
+
+	elseif key == GetConVar('cl_scomms_bind_like'):GetInt() then
+
+		comms.addLike()
 
 	end
-
-	comms.menuPopup()
 
 end
 
@@ -894,7 +911,7 @@ function comms.OpenSection(section, bData)
 
 			for i = 1, #comms.data do
 
-				if comms.data[i].sid != LocalPlayer():SteamID() then
+				if comms.data[i].sid != LocalPlayer():SteamID() and comms.data[i].sid != 'STEAM_0:0:0' then
 
 					continue
 
@@ -1278,14 +1295,43 @@ HOOKS
 ---------------------------------------------------------------------------]]
 
 hook.Add( 'PostDrawTranslucentRenderables', 'comms.Draw', comms.Draw )
+
 hook.Add( 'HUDPaint', 'comms.LikeHUD', comms.LikeHUD )
+
 hook.Add( 'PlayerButtonDown', 'comms.KeyPress', comms.KeyPress )
+
+comms.pressCD = 0
+
 hook.Add( 'Think', 'workaroundthink', function()
-	if input.IsKeyDown(comms.config.toggleButton) then
+
+	if !game.SinglePlayer() then
+
+		return
+
+	end
+
+	if comms.pressCD >= CurTime() then
+
+		return
+
+	end
+
+	if input.IsKeyDown(GetConVar('cl_scomms_bind_menu'):GetInt()) then
+
+		comms.pressCD = CurTime() + 0.5
 
 		comms.menuPopup()
 
 	end
+
+	if input.IsKeyDown(GetConVar('cl_scomms_bind_like'):GetInt()) then
+
+		comms.pressCD = CurTime() + 0.5
+
+		comms.addLike()
+
+	end
+
 end )
 
 

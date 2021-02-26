@@ -8,11 +8,13 @@ comms.config = {}
 
 comms.config.toggleButton = KEY_P -- defines a button to open commentary menu
 
-comms.config.fontName = 'Arial' -- name of the font to be used to draw text ***REQUIRES RESTART***
+comms.config.fontName = 'Futura New Book' -- name of the font to be used to draw text ***REQUIRES RESTART***
 
 comms.config.drawDistance = 1000^2 -- draw distance for commentary ui (don't remove ^2, just change the number)
 
 comms.config.sizeMultiplier = 1 -- scales the size of commentary ui to the defined value
+
+comms.config.playerCommentsLimit = 4 -- maximum amount of comments that player can have on server
 
 comms.config.commentaryDuration = 14 -- duration for commentary in days
 
