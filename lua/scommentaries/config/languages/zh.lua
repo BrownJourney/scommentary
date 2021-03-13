@@ -1,0 +1,55 @@
+local lang = {}
+lang['category_cats'] = '分类目录'
+lang['category_create'] = '添加评论'
+lang['category_control'] = '我的评论'
+lang['category_logs'] = '评论日志'
+
+lang['text_self'] = '请在下方输入文本内容'
+lang['text_type'] = '类型'
+lang['text_unknown'] = '未知'
+lang['text_removing'] = '将在%s后被删除'
+lang['text_submit'] = '确定'
+lang['text_creator'] = '发布者'
+lang['text_anon'] = '匿名评论'
+lang['text_datecreation'] = '创建日期'
+lang['text_timetoremove'] = '剩余时间'
+lang['text_comm'] = '评论内容'
+lang['text_remove'] = '删除评论'
+lang['text_cancel'] = '取消'
+lang['text_moveto'] = '传送到评论位置'
+lang['text_copysid'] = '复制SteamID'
+lang['text_days'] = '天'
+lang['text_hours'] = '小时'
+lang['text_minutes'] = '分钟'
+lang['text_infinite'] = '永久存在'
+lang['text_yes'] = '是'
+lang['text_no'] = '否'
+lang['text_duration'] = '评论存在时间'
+lang['text_permanent'] = '设为永久'
+lang['text_buttonlike'] = '按 [%s] 点赞该评论'
+lang['text_likes'] = '点赞数'
+
+lang['check_anon'] = '匿名评论'
+lang['check_perm'] = '永久性评论'
+
+lang['notify_changedtype'] = '你已成功更改评论类型!'
+lang['notify_fieldempty'] = "文本字段不能为空!"
+lang['notify_niltype'] = "你未指定评论类型"
+lang['notify_copysid'] = "你已成功复制发布者的SteamID"
+lang['notify_serverlimit'] = '已达到服务器评论的数量限制!'
+lang['notify_accountlimit'] = '你已达到用户评论总数上限!'
+lang['notify_nearcomm'] = '附近有一条评论!'
+lang['notify_ground'] = '你只能在地面上发表评论!'
+lang['notify_moveto'] = '你已成功传送到评论#%s的位置'
+lang['notify_remove'] = '你已成功删除评论#%s'
+lang['notify_undefined'] = "评论#%s人间蒸发了!"
+lang['notify_cantafford'] = "你没有能力创建评论"
+lang['notify_commcreation'] = '你已成功创建评论!'
+lang['notify_fieldsmall'] = '你的评论长度太短了!'
+lang['notify_fieldlarge'] = '你的评论长度太长了!'
+lang['notify_permanent'] = '你已成功将评论#%s的持续时间更改为永久!'
+lang['notify_errorlike'] = '你已经给这个评论点赞过了!'
+lang['notify_likecomm'] = '你已成功点赞这个评论!'
+lang['notify_likelimit'] = '此评论点赞数量已达到上限!'
+
+comms.language = lang
