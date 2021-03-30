@@ -1,0 +1,55 @@
+local lang = {}
+lang['category_cats'] = 'Kategorier'
+lang['category_create'] = 'Lägg till en kommentar'
+lang['category_control'] = 'Mina kommentarer'
+lang['category_logs'] = 'kommentarloggar'
+
+lang['text_self'] = 'TEXT'
+lang['text_type'] = 'SKRIV'
+lang['text_unknown'] = 'okänd'
+lang['text_removing'] = 'Kommer att tas bort om %s'
+lang['text_submit'] = 'Bekräfta'
+lang['text_creator'] = 'Skapare'
+lang['text_anon'] = 'anonym'
+lang['text_datecreation'] = 'Skapelsedatum'
+lang['text_timetoremove'] = 'Tid kvar'
+lang['text_comm'] = 'Text'
+lang['text_remove'] = 'Ta bort kommentar'
+lang['text_cancel'] = 'Avbryt'
+lang['text_moveto'] = 'Teleportera till kommentaren'
+lang['text_copysid'] = 'Kopiera SteamID'
+lang['text_days'] = 'dagar'
+lang['text_hours'] = 'timmar'
+lang['text_minutes'] = 'minuter'
+lang['text_infinite'] = 'oändligt'
+lang['text_yes'] = 'Ja'
+lang['text_no'] = 'Nej'
+lang['text_duration'] = 'VARAKTIGHET'
+lang['text_permanent'] = 'Gör permanent'
+lang['text_buttonlike'] = 'Tryck på [%s] för att gilla den här kommentaren'
+lang['text_likes'] = 'Gillningar'
+
+lang['check_anon'] = 'Förbli anonym'
+lang['check_perm'] = 'Permanent kommentar'
+
+lang['notify_changedtype'] = 'Du har ändrat på kommentartypen!'
+lang['notify_fieldempty'] = "Du kan inte lämna textområdet tomt"
+lang['notify_niltype'] = "Du angav inte en kommentarstyp"
+lang['notify_copysid'] = "Du har kopierat auktorens SteamID"
+lang['notify_serverlimit'] = 'Servergränsen för högst antal kommentarer har nåtts upp!'
+lang['notify_accountlimit'] = 'Du har nått det högsta antalet för kommentarer på ditt konto!'
+lang['notify_nearcomm'] = 'Det finns en kommentar i närheten!'
+lang['notify_ground'] = 'Du kan endast placera ut kommentarer på marken!'
+lang['notify_moveto'] = 'Du har teleporterats till kommentaren #%s'
+lang['notify_remove'] = 'Du har tagit bort kommentaren #%s'
+lang['notify_undefined'] = "Kommentar #%s Finns inte längre!"
+lang['notify_cantafford'] = "Du har inte råd för att skapa en kommentar"
+lang['notify_commcreation'] = 'Du har skapat en kommentar!'
+lang['notify_fieldsmall'] = 'Din text är för kort!'
+lang['notify_fieldlarge'] = 'Din text är för stor!'
+lang['notify_permanent'] = 'Du har bytt varaktigheten #%s till permanent!'
+lang['notify_errorlike'] = 'Du har redan gillat den här kommentaren!'
+lang['notify_likecomm'] = 'Du har gillade den här kommentaren!'
+lang['notify_likelimit'] = 'Den här kommentaren har uppnått högst gillningar!'
+
+comms.language = lang
