@@ -1,0 +1,55 @@
+local lang = {}
+lang['category_cats'] = 'Kategorie'
+lang['category_create'] = 'Dodaj Komende'
+lang['category_control'] = 'Moje kommendy'
+lang['category_logs'] = 'logi'
+
+lang['text_self'] = 'TEKST'
+lang['text_type'] = 'TYP TEKSTU'
+lang['text_unknown'] = 'nieznany'
+lang['text_removing'] = 'Zostanie wyczyszczone w %s'
+lang['text_submit'] = 'Potwierdź'
+lang['text_creator'] = 'Twórca'
+lang['text_anon'] = 'Anonimowy'
+lang['text_datecreation'] = 'Data dodania'
+lang['text_timetoremove'] = 'Pozostało czasu'
+lang['text_comm'] = 'Tekst'
+lang['text_remove'] = 'Usuń komende'
+lang['text_cancel'] = 'Anuluj'
+lang['text_moveto'] = 'Teleportuj do komendy'
+lang['text_copysid'] = 'Kopiuj SteamID'
+lang['text_days'] = 'dni'
+lang['text_hours'] = 'godziny'
+lang['text_minutes'] = 'minuty'
+lang['text_infinite'] = 'neskończone'
+lang['text_yes'] = 'Tak'
+lang['text_no'] = 'Nie'
+lang['text_duration'] = 'Czas trwania'
+lang['text_permanent'] = 'Ustaw permanentnie'
+lang['text_buttonlike'] = 'Naciśnij [%s] żeby polubić tą komendę'
+lang['text_likes'] = 'Polubienia'
+
+lang['check_anon'] = 'Zostań anonimowy'
+lang['check_perm'] = 'Permanentna komenda'
+
+lang['notify_changedtype'] = 'Sukces! Zmieniłeś typ komendy!'
+lang['notify_fieldempty'] = "Nie możesz zostawić pustego pola!"
+lang['notify_niltype'] = "Nie sprecyzowałeś komendy"
+lang['notify_copysid'] = "Pomyślnie skopiowałeś SteamID autora"
+lang['notify_serverlimit'] = 'Limit komend Servera został osiągnięty!'
+lang['notify_accountlimit'] = 'Osiągnąłeś limit maksymalnych komentarzy na swoim koncie!!'
+lang['notify_nearcomm'] = 'Już istnieje komenda w pobliżu!'
+lang['notify_ground'] = 'Nie możesz zostawić komendy na ziemi!'
+lang['notify_moveto'] = ' Przeteleportowałeś się do komendy #%s'
+lang['notify_remove'] = 'Wyczyściłeś #%s'
+lang['notify_undefined'] = "Komenda #%s już nie istnieje!"
+lang['notify_cantafford'] = "Nie możesz utworzyć komentarza"
+lang['notify_commcreation'] = 'Pomyślnie stworzyłeś komende!'
+lang['notify_fieldsmall'] = 'Twój tekst jest zbyt krótki!'
+lang['notify_fieldlarge'] = 'Twój tekst jest zbyt długi!'
+lang['notify_permanent'] = 'Pomyślnie zmieniłeś czas trwania komendy #%s na permanentny!'
+lang['notify_errorlike'] = 'Już lubisz tą komendę!'
+lang['notify_likecomm'] = 'Lubisz tą komendę!'
+lang['notify_likelimit'] = 'Ta komenda osiąneła limit polubień!'
+
+comms.language = lang
