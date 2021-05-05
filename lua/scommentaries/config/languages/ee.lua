@@ -1,0 +1,55 @@
+local lang = {}
+lang['category_cats'] = ' Kategooriad'
+lang['category_create'] = ' pane komentaar'
+lang['category_control'] = 'minu komentaarid'
+lang['category_logs'] = 'Komentaaride ajalugu'
+
+lang['text_self'] = 'tekst'
+lang['text_type'] = 'kirjuta'
+lang['text_unknown'] = 'mitte teatud'
+lang['text_removing'] = 'kustutatakse %s pärast'
+lang['text_submit'] = 'kinnita'
+lang['text_creator'] = 'tegija'
+lang['text_anon'] = 'Mitte teatud'
+lang['text_datecreation'] = 'tegemise kella aeg'
+lang['text_timetoremove'] = 'Aeg alles'
+lang['text_comm'] = 'Tekst'
+lang['text_remove'] = 'Kustuta komentaar'
+lang['text_cancel'] = 'tühista'
+lang['text_moveto'] = 'Teleporti komentaari juurde'
+lang['text_copysid'] = ' kopeeri SteamID'
+lang['text_days'] = 'päevad'
+lang['text_hours'] = 'tunnid'
+lang['text_minutes'] = 'minutid'
+lang['text_infinite'] = 'lõpmatu'
+lang['text_yes'] = 'jah'
+lang['text_no'] = 'ei'
+lang['text_duration'] = 'kestmis aeg'
+lang['text_permanent'] = 'pane igaveseks'
+lang['text_buttonlike'] = 'vajuta [%s] et panna "meeldib"'
+lang['text_likes'] = 'meeldivused'
+
+lang['check_anon'] = 'püsi salajasena'
+lang['check_perm'] = 'igavene komentaar'
+
+lang['notify_changedtype'] = ' Muutsid komentaari tüüpi!'
+lang['notify_fieldempty'] = "Sa ei saa jätta teksti ala tühjaks"
+lang['notify_niltype'] = "sa ei spesifiseerinud komentaari tüüpi"
+lang['notify_copysid'] = "kopeerisid steamID"
+lang['notify_serverlimit'] = 'Komentaaride limiitil!'
+lang['notify_accountlimit'] = 'Sul on maksimum võimalike komentaare!'
+lang['notify_nearcomm'] = ' üks Komentaar on lähedal!'
+lang['notify_ground'] = 'sa saad jätta komentaarid maa pinnale!'
+lang['notify_moveto'] = 'Sa teleporteruusid komentaarile #%s'
+lang['notify_remove'] = 'sa oled kustutanud komentaari #%s'
+lang['notify_undefined'] = "Komentaar #%s ei ole enam olemas!"
+lang['notify_cantafford'] = "sa ei saa teha komentaari sest sul pole raha"
+lang['notify_commcreation'] = 'Tegid komentaari!'
+lang['notify_fieldsmall'] = ' Liiga vähe teksti!'
+lang['notify_fieldlarge'] = 'Liiga palju teksti!'
+lang['notify_permanent'] = 'sa muutsid komentaari pikust #%s lõpmatuseni!'
+lang['notify_errorlike'] = 'sa oled juba meeldinud seda komentaari!'
+lang['notify_likecomm'] = 'sa meeldisid seda komentaari!'
+lang['notify_likelimit'] = 'see komentaar on meeldivuse liimitil!'
+
+comms.language = {}
